@@ -1,0 +1,28 @@
+{
+  "name": "smartass",
+  "version": "0.1.0",
+  "description": "Test your javascript knowledge",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pveyes/smartass.git"
+  },
+  "keywords": [
+    "javascript",
+    "knowledge",
+    "test",
+    "technical"
+  ],
+  "author": "Fatih Kalifa <fatihkalifa@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pveyes/smartass/issues"
+  },
+  "homepage": "https://github.com/pveyes/smartass#readme",
+  "dependencies": {
+    "ava": "^0.9.1"
+  }
+}
