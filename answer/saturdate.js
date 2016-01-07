@@ -23,6 +23,7 @@
  *
  * @param Array<string> dates
  * @param string today
+ * @return Array<string>
  */
 module.exports = function saturdate(dates, today) {
   var output = [];
