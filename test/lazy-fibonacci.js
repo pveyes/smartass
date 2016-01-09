@@ -76,6 +76,25 @@ test('look back skip 1', t => {
   t.same(fibonacci(-2), 1);
 });
 
+test('move on', t => {
+  const fibonacci = lazyFibonacci();
+
+  t.same(fibonacci(-1), 1);
+  t.same(fibonacci(-1), 1);
+  t.same(fibonacci(-1), 1);
+  t.same(fibonacci(-1), 1);
+  t.same(fibonacci(-1), 1);
+  t.same(fibonacci(-1), 1);
+  t.same(fibonacci(-1), 1);
+  t.same(fibonacci(-1), 1);
+  t.same(fibonacci(), 1);
+  t.same(fibonacci(), 2);
+  t.same(fibonacci(), 3);
+  t.same(fibonacci(), 5);
+  t.same(fibonacci(), 8);
+  t.same(fibonacci(), 13);
+});
+
 test('keep calm and no error', t => {
   const fibonacci = lazyFibonacci();
   t.same(fibonacci(-1), 1);
