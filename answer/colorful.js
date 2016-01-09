@@ -24,7 +24,7 @@
  * // And add more than one
  * clr.add('white', 'grey', 'gray')
  *
- * NOTE: if same color appear twice, include only the latest
+ * NOTE: if same color appear more than once, include only the latest
  *
  * @param Array<string> colors
  * @return Object
