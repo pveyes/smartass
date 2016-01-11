@@ -8,18 +8,18 @@
  * var clr = colorful(['red', 'blue']);
  *
  * // allow simple coloring
- * clr.red('simple') = { text: 'simple', colors: ['red'] }
+ * clr.red('simple') === { text: 'simple', colors: ['red'] }
  *
  * // allow chainable color
- * clr.red.blue('hello') = { text: 'hello', colors: ['red', 'blue'] }
+ * clr.red.blue('hello') === { text: 'hello', colors: ['red', 'blue'] }
  *
  * // allow repetitive chain
- * clr.red.red.red.red.red.red.blue.red('world') = { text: 'world', colors: ['blue', 'red'] }
+ * clr.red.red.red.red.red.red.blue.red('world') === { text: 'world', colors: ['blue', 'red'] }
  *
  * // you can also add new color
  * clr.add('black')
- * clr.black('empty') = { text: 'empty', colors: ['black'] }
- * clr.red.black('tree') = { text: 'tree', colors: ['red', 'black'] }
+ * clr.black('empty') === { text: 'empty', colors: ['black'] }
+ * clr.red.black('tree') === { text: 'tree', colors: ['red', 'black'] }
  *
  * // And add more than one
  * clr.add('white', 'grey', 'gray')
