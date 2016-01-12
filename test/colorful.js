@@ -62,3 +62,23 @@ test('at first there was nothing', t => {
   t.same(clr.red.green.blue('rgb'), { text: 'rgb', colors: ['red', 'green', 'blue'] });
   t.same(clr.cyan.magenta.yellow.black('cmyk'), { text: 'cmyk', colors: ['cyan', 'magenta', 'yellow', 'black'] });
 });
+
+test('allow reasigned', t => {
+  const clr = colorful(COLORS);
+
+  const rgb = clr.red.green.blue;
+  const cmy = clr.cyan.magenta.yellow;
+
+  t.same(rgb('rgb'), { text: 'rgb', colors: ['red', 'green', 'blue'] });
+  t.same(cmy('cmy'), { text: 'cmy', colors: ['cyan', 'magenta', 'yellow'] });
+});
+
+test('allow call and aplly', t => {
+  const clr = colorful(COLORS);
+
+  const rgb = clr.red.green.blue;
+  const cmy = clr.cyan.magenta.yellow;
+
+  t.same(rgb.call(clr, 'rgb'), { text: 'rgb', colors: ['red', 'green', 'blue'] });
+  t.same(cmy.apply(clr, ['cmy']), { text: 'cmy', colors: ['cyan', 'magenta', 'yellow'] });
+});
