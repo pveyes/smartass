@@ -12,8 +12,16 @@ $ cd smartass
 $ npm install
 ```
 
-### Test
+### Testing solution
 
 ```sh
+# Check all solution
 $ npm run test
+
+# Check specific solution
+$ npm run unit test/fizz-buzz.js
 ```
+
+### License
+
+MIT

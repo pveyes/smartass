@@ -4,7 +4,8 @@
   "description": "Test your javascript knowledge",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "npm run unit test/**.js",
+    "unit": "ava"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,12 @@
     "technical"
   ],
   "author": "Fatih Kalifa <fatihkalifa@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/pveyes/smartass/issues"
   },
   "homepage": "https://github.com/pveyes/smartass#readme",
   "dependencies": {
-    "ava": "^0.9.1"
+    "ava": "^0.12.0"
   }
 }
