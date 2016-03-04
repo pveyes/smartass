@@ -82,3 +82,13 @@ test('allow call and aplly', t => {
   t.same(rgb.call(clr, 'rgb'), { text: 'rgb', colors: ['red', 'green', 'blue'] });
   t.same(cmy.apply(clr, ['cmy']), { text: 'cmy', colors: ['cyan', 'magenta', 'yellow'] });
 });
+
+test('no duck typing', t => {
+  const clr = colorful(COLORS);
+
+  const rgb = clr.red.green.blue;
+  const cmy = clr.cyan.magenta.yellow;
+
+  t.same(rgb instanceof Function, true);
+  t.same(cmy instanceof Function, true);
+});
