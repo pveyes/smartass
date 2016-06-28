@@ -18,5 +18,5 @@ test('not an abbreviation', t => {
   t.same(isAbbreviation('Cheesy Potatoes', 'cheetos'), false);
   t.same(isAbbreviation('Thankgod It\'s Friday', 'TGIF'), false);
   t.same(isAbbreviation('Call me maybe', 'calbe'), false);
-  t.same(isAbbreviation('European Union', 'Europe'), true);
+  t.same(isAbbreviation('European Union', 'Europe'), false);
 });
