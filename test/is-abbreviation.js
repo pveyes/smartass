@@ -3,6 +3,7 @@ import isAbbreviation from '../answer/is-abbreviation';
 
 test('common abbr', t => {
   t.same(isAbbreviation('British exit', 'Brexit'), true);
+  t.same(isAbbreviation('British exit yes', 'Brexity'), true);
   t.same(isAbbreviation('European Union', 'EU'), true);
   t.same(isAbbreviation('Thank god it\'s friday', 'TGIF'), true);
   t.same(isAbbreviation('Multiple universe', 'Multiverse'), true);
