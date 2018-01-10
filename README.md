@@ -1,5 +1,7 @@
 # Smartass
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pveyes/smartass.svg)](https://greenkeeper.io/)
+
 This is a collection of javascript questions that you can use to improve your
 javascript skill and logic. To solve a problem, simply open answer directory
 and find the problem you want to solve. Each questions will be written as comment
